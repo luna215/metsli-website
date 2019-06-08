@@ -38,5 +38,10 @@ $(document).ready(function() {
     // $('html').on('DOMMouseScroll', function (e) {
     //     _.throttle(handleScroll(e), 1000);
     // });
-    $('html').on('DOMMouseScroll', _.throttle(handleScroll, 2050));
+    // $('html').on('DOMMouseScroll', _.throttle(handleScroll, 2050));
+    $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
+        'leading': true,
+        'trailing': false
+    }));
+    // $('html').on('DOMMouseScroll', once(handleScroll));
 });

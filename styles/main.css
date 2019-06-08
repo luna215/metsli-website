@@ -40,7 +40,7 @@ body {
     height: 100%;
     margin-top: 35px;
     border-bottom: 1px solid #FFFFFF;
-    transition: 2s;
+    transition: 1s;
 }
 
 .navbar>ul>li:hover {
@@ -56,7 +56,7 @@ body {
     height: 100%;
     margin-top: 35px;
     border-bottom: 1px solid #FFFFFF;
-    transition: 2s;
+    transition: 1s;
 }
 
 .title {
