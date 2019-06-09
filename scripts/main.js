@@ -18,6 +18,7 @@ function handleScroll(e) {
                 $('.preview-tacos').removeClass('slide-west-in');
                 $('.preview-bemi').removeClass('slide-west-in');
                 $('.overlay-forest').removeClass('slide-west-in');
+                $('.view-more-button').removeClass('slide-east-in');
                 $('.projectspage').removeClass('slide-south');
             } else if(currentPage === 'contact') {
                 currentPage = 'projects';
@@ -28,6 +29,7 @@ function handleScroll(e) {
                 $('.preview-tacos').addClass('slide-west-in');
                 $('.preview-bemi').addClass('slide-west-in');
                 $('.overlay').addClass('slide-west-in');
+                $('.view-more-button').addClass('slide-east-in');
             } else {
                 console.warn(`Currently on page: ${currentPage}`);
             }
@@ -46,7 +48,6 @@ function handleScroll(e) {
                 $('.preview-bemi').addClass('slide-west-in');
                 $('.overlay-forest').addClass('slide-west-in');
                 $('.view-more-button').addClass('slide-east-in');
-                
             } else if(currentPage === 'projects') {
                 currentPage = 'contact'
                 $('#projects').removeClass('active');
@@ -57,6 +58,7 @@ function handleScroll(e) {
                 $('.preview-tacos').removeClass('slide-west-in');
                 $('.preview-bemi').removeClass('slide-west-in');
                 $('.overlay-forest').removeClass('slide-west-in');
+                $('.view-more-button').removeClass('slide-east-in');
             } else {
                 console.warn(`Currently on ${currentPage}`);
             }
