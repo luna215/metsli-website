@@ -69,11 +69,12 @@ body {
 }
 
 .portfolio {
-    left: 20%;
+    left: -40%;
     top: 10%;
     font-size: 10em;
     color: white;
     z-index: 2;
+    opacity: 0;
 }
 
 .sub-content {
@@ -89,12 +90,16 @@ body {
     height: 500px;
     width: 500px;
     top: 15%;
-    left: 55%;
+    left: 100%;
 }
 
 .overlay {
-    position: absolute
+    position: absolute;
     z-index: 1;
+    height: 500px;
+    width: 500px;
+    top: 15%;
+    left: 100%;
     background: rgba(255, 255, 255, 0.1);
 }
 
@@ -179,4 +184,16 @@ body {
     transform: translate(1000px, 0%);
     transition: 2s;
     opacity: 0;
+}
+
+.slide-east-in {
+    transform: translate(150%, 0%);
+    transition: 2s;
+    opacity: 1;
+}
+
+.slide-west-in {
+    transform: translate(-125%, 0%);
+    transition: 2s;
+    opacity: 1;
 }

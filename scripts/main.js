@@ -23,11 +23,15 @@ function handleScroll(e) {
                 $('.title').addClass('slide-northeast');
                 $('.start-project-button').addClass('slide-north');
                 $('.scroll-link').addClass('slide-east');
+                $('.portfolio').addClass('slide-east-in');
+                $('.preview').addClass('slide-west-in');
+                $('.overlay').addClass('slide-west-in');
                 
             } else if(currentPage === 'projects') {
                 currentPage = 'contact'
                 $('#projects').removeClass('active');
                 $('#contact').addClass('active');
+                $('.projectspage').addClass('slide-north');
             } else {
                 console.warn(`Currently on ${currentPage}`);
             }
@@ -35,13 +39,9 @@ function handleScroll(e) {
 }
 
 $(document).ready(function() {
-    // $('html').on('DOMMouseScroll', function (e) {
-    //     _.throttle(handleScroll(e), 1000);
-    // });
-    // $('html').on('DOMMouseScroll', _.throttle(handleScroll, 2050));
     $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
         'leading': true,
         'trailing': false
     }));
-    // $('html').on('DOMMouseScroll', once(handleScroll));
+    // TODO: Implement compability function for Chrome and Safari
 });
