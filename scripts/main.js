@@ -64,11 +64,23 @@ function handleScroll(e) {
             }
         }
 }
-
+function displayClients() {
+    $('.our-clients').addClass('slide-east-in');
+    $('html').off('DOMMouseScroll');
+}
 $(document).ready(function() {
     $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
         'leading': true,
         'trailing': false
     }));
     // TODO: Implement compability function for Chrome and Safari
+
+    $('.view-more-button').on('click', displayClients);
+    $('.tag-remove').on('click', () => {
+        $('.our-clients').removeClass('slide-east-in');
+        $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
+            'leading': true, 
+            'trailining': false
+        }));
+    });
 });
