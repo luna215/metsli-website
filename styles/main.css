@@ -25,7 +25,8 @@ body {
 
 .name {
     position: absolute;
-    left: 40%
+    left: 40%;
+    color: #F34E72;
 }
 
 .navbar>ul {

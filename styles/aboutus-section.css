@@ -1,0 +1,59 @@
+.about-us {
+    background-color: #3c2949;
+    font-size: 10em;
+    color: white;
+    box-shadow: 0px 0px 20px black;
+}
+
+.about-sub {
+    position: absolute;
+    overflow: hidden;
+    left: 20%;
+    top: 15%;
+    height: 3em;
+    transition: 0.25s;
+    opacity: 1;
+    background-color:#FF4500;
+    padding: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.about-sub>h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.about-sub:hover {
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    height: 8em;
+    padding: 10px;
+    transition: 0.25s;
+    opacity: 1;
+}
+
+
+.about-sub-2 {
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    overflow: hidden;
+    height: 3em;
+    padding: 10px;
+    background-color:#FF4500;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.about-sub-2:hover {
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    height: 8em;
+    padding: 10px;
+    transition: 0.5s;
+    opacity: 1;
+}
