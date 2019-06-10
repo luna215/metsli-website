@@ -1,0 +1,35 @@
+.slide-north {
+    transform: translate(0%, -1000px);
+    transition: 2s;
+    opacity: 0;
+}
+
+.slide-south {
+    transform: translate(0, 1000px);
+    transition: 2s;
+    /* opacity: 0; */
+}
+
+.slide-northeast {
+    transform: translate(100px, -500px);
+    transition: 2s;
+    opacity: 0;
+}
+
+.slide-east {
+    transform: translate(1000px, 0%);
+    transition: 2s;
+    opacity: 0;
+}
+
+.slide-east-in {
+    transform: translate(100%, 0%);
+    transition: 2s;
+    opacity: 1 !important;
+}
+
+.slide-west-in {
+    transform: translate(-125%, 0%);
+    transition: 2s;
+    opacity: 1 !important;
+}

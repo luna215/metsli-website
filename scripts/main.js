@@ -6,9 +6,12 @@ function handleScroll(e) {
         if (delta < 0) {
             if(currentPage === 'projects') {
                 currentPage = 'homepage';
+                if($('.our-clients').hasClass('slide-east-in')) {
+                    $('.our-clients').removeClass('slide-east-in');
+                }
                 $('#projects').removeClass('active');
                 $('#homepage').addClass('active');
-                $('.projectspage').addClass('slide-south');
+                $('.projects-section').addClass('slide-south');
                 $('.title').removeClass('slide-northeast');
                 $('.sub-content').removeClass('slide-north');
                 $('.start-project-button').removeClass('slide-north');
@@ -19,7 +22,7 @@ function handleScroll(e) {
                 $('.preview-bemi').removeClass('slide-west-in');
                 $('.overlay-forest').removeClass('slide-west-in');
                 $('.view-more-button').removeClass('slide-east-in');
-                $('.projectspage').removeClass('slide-south');
+                $('.projects-section').removeClass('slide-south');
             } else if(currentPage === 'contact') {
                 currentPage = 'projects';
                 $('#contact').removeClass('active');
@@ -49,7 +52,10 @@ function handleScroll(e) {
                 $('.overlay-forest').addClass('slide-west-in');
                 $('.view-more-button').addClass('slide-east-in');
             } else if(currentPage === 'projects') {
-                currentPage = 'contact'
+                currentPage = 'contact';
+                if($('.our-clients').hasClass('slide-east-in')) {
+                    $('.our-clients').removeClass('slide-east-in');
+                }
                 $('#projects').removeClass('active');
                 $('#contact').addClass('active');
                 $('.portfolio').removeClass('slide-east-in');
@@ -66,7 +72,6 @@ function handleScroll(e) {
 }
 function displayClients() {
     $('.our-clients').addClass('slide-east-in');
-    $('html').off('DOMMouseScroll');
 }
 $(document).ready(function() {
     $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
@@ -78,9 +83,10 @@ $(document).ready(function() {
     $('.view-more-button').on('click', displayClients);
     $('.tag-remove').on('click', () => {
         $('.our-clients').removeClass('slide-east-in');
-        $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
-            'leading': true, 
-            'trailining': false
-        }));
+    });
+
+    $('.our-clients').on('DOMMouseScroll', function(e) {
+        console.log(e); 
+        e.stopPropagation();
     });
 });
