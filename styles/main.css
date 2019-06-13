@@ -29,6 +29,21 @@ body {
     color: #F34E72;
 }
 
+#contact {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    color:#F34E72;
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    padding : 20px 0;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+
 .navbar>ul {
     margin: auto;
     width: 80%;
@@ -104,6 +119,22 @@ body {
     border-radius: 35px;
     box-shadow: 10px 5px 5px black;
     transition: 1s;
+}
+
+.modal {
+    position: fixed;
+    left: 10%;
+    top: 14.4%;
+    background-color: white;
+    padding: 11px;
+    display: none;
+    z-index: 100;
+}
+
+.modal>form>textarea {
+    width: 98%;
+    height: 100px;
+    margin-top: 10px
 }
 /* scroll mouse style */
 

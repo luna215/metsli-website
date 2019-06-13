@@ -204,7 +204,7 @@
     height: 500px;
     z-index: 100;
     width: 700px;
-    background-color: #3c2949;
+    background-color: white;
     overflow: scroll;
     -ms-overflow-style: none;
     box-shadow: 10px 5px 20px black;
