@@ -23,7 +23,7 @@ function handleScroll(e) {
                 $('.overlay-forest').removeClass('slide-west-in');
                 $('.view-more-button').removeClass('slide-east-in');
                 $('.projects-section').removeClass('slide-south');
-            } else if(currentPage === 'contact') {
+            } else if(currentPage === 'about-us') {
                 currentPage = 'projects';
                 $('#contact').removeClass('active');
                 $('#projects').addClass('active');
@@ -33,6 +33,10 @@ function handleScroll(e) {
                 $('.preview-bemi').addClass('slide-west-in');
                 $('.overlay').addClass('slide-west-in');
                 $('.view-more-button').addClass('slide-east-in');
+                $('.web-design-box').removeClass('slide-north-in');
+                $('.software-development-box').removeClass('slide-north-in');
+                $('.high-quality-team-box').removeClass('slide-north-in');
+                $('.about-us').removeClass('slide-north-in');
             } else {
                 console.warn(`Currently on page: ${currentPage}`);
             }
@@ -52,7 +56,7 @@ function handleScroll(e) {
                 $('.overlay-forest').addClass('slide-west-in');
                 $('.view-more-button').addClass('slide-east-in');
             } else if(currentPage === 'projects') {
-                currentPage = 'contact';
+                currentPage = 'about-us';
                 if($('.our-clients').hasClass('slide-east-in')) {
                     $('.our-clients').removeClass('slide-east-in');
                 }
@@ -65,6 +69,10 @@ function handleScroll(e) {
                 $('.preview-bemi').removeClass('slide-west-in');
                 $('.overlay-forest').removeClass('slide-west-in');
                 $('.view-more-button').removeClass('slide-east-in');
+                $('.web-design-box').addClass('slide-north-in');
+                $('.software-development-box').addClass('slide-north-in');
+                $('.high-quality-team-box').addClass('slide-north-in');
+                $('.about-us').addClass('slide-north-in');
             } else {
                 console.warn(`Currently on ${currentPage}`);
             }

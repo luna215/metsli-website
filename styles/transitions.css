@@ -4,6 +4,11 @@
     opacity: 0;
 }
 
+.slide-north-in {
+    transform: translate(0%, -1000px);
+    opacity: 1;
+}
+
 .slide-south {
     transform: translate(0, 1000px);
     transition: 2s;
