@@ -132,14 +132,14 @@ body {
 }
 
 .modal>form>input {
-    height: 40px;
-    font-size: 1.5em;
+    height: 35px;
+    font-size: 1em;
 }
 .modal>form>textarea {
     width: 98%;
-    height: 150px;
+    height: 125px;
     margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 /* scroll mouse style */
 
