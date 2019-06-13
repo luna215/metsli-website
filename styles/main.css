@@ -131,6 +131,9 @@ body {
     z-index: 100;
 }
 
+.modal>form>input {
+    height: 30px;
+}
 .modal>form>textarea {
     width: 98%;
     height: 100px;
