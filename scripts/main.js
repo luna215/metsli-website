@@ -95,7 +95,6 @@ $(document).ready(function() {
     });
 
     $('.our-clients').on('DOMMouseScroll', function(e) {
-        console.log(e); 
         e.stopPropagation();
     });
 
