@@ -1,18 +1,18 @@
 $(document).ready(function() {
     $('.portfolio').hover(function() {
-        $('.forest').css('background-image', "url('./images/svgs/forest-background.svg')");
+        $('.forest').fadeIn("slow", function() {});
     });
 
     $('.portfolio').mouseleave(function() {
-        $('.forest').css('background-image', "");
+        $('.forest').fadeOut("slow", function() {});
     });
 
     $('span.premier').hover(function() {
-        $('div.premier').css('background-image', "url('./images/premierpool.png')");
+        $('div.premier').fadeIn("slow", function() {});
     });
 
     $('span.premier').mouseleave(function() {
-        $('div.premier').css('background-image', "");
+        $('div.premier').fadeOut("slow", function() {});
     });
 
     $('span.tacos').hover(function() {
@@ -24,6 +24,7 @@ $(document).ready(function() {
     });
 
     $('span.bemi').hover(function() {
+        
         $('div.bemi').css('background-image', "url('./images/bemi.png')");
     });
 

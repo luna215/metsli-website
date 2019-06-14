@@ -10,6 +10,11 @@ https://mkrtchyan.ga
     font-family: Circularpro, sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 header {
     background-color: rgba(33, 33, 33, 0.9);
     color: #ffffff;
@@ -147,18 +152,22 @@ main {
 .forest {
     position: absolute;
     width: 25%;
+    background: url(../images/svgs/forest-background.svg);
+    z-index: 2;
+    display: none;
     height: 100%;
-    text-align: center;
     background-size: cover;
 }
 
-.premier {
+div.premier {
     position: absolute;
+    background: url(../images/premierpool.png);
     background-size: cover;
     left: 25%;
     width: 25%;
     height: 100%;
-    text-align: center;
+    display: none;
+    z-index: 2;
 }
 
 .tacos {
@@ -183,16 +192,18 @@ main {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 35%;
+    left: 6%;
     font-size: 2em;
+    z-index: 3;
     color: white;
 }
 
 span.premier {
     position: absolute;
     text-align: center;
+    z-index: 3;
     top: 50%;
-    left: 35%;
+    left: 32%;
     font-size: 2em;
     color: white;
 }
