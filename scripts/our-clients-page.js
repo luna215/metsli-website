@@ -1,34 +1,33 @@
 $(document).ready(function() {
     $('.portfolio').hover(function() {
-        $('.forest').fadeIn("slow", function() {});
+        $('.forest').fadeIn("fast", function() {});
     });
 
     $('.portfolio').mouseleave(function() {
-        $('.forest').fadeOut("slow", function() {});
+        $('.forest').fadeOut("fast", function() {});
     });
 
     $('span.premier').hover(function() {
-        $('div.premier').fadeIn("slow", function() {});
+        $('div.premier').fadeIn("fast", function() {});
     });
 
     $('span.premier').mouseleave(function() {
-        $('div.premier').fadeOut("slow", function() {});
+        $('div.premier').fadeOut("fast", function() {});
     });
 
     $('span.tacos').hover(function() {
-        $('div.tacos').css('background-image', "url('./images/tacosman.png')");
+        $('div.tacos').fadeIn("fast", function() {});
     });
 
     $('span.tacos').mouseleave(function() {
-        $('div.tacos').css('background-image', "");
+        $('div.tacos').fadeOut("fast", function() {});
     });
 
     $('span.bemi').hover(function() {
-        
-        $('div.bemi').css('background-image', "url('./images/bemi.png')");
+        $('div.bemi').fadeIn('fast', function() {});
     });
 
     $('span.bemi').mouseleave(function() {
-        $('div.bemi').css('background-image', "");
+        $('div.bemi').fadeOut("fast", function() {});
     });
 }); 

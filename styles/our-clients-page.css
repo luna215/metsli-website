@@ -170,22 +170,26 @@ div.premier {
     z-index: 2;
 }
 
-.tacos {
+div.tacos {
     position: absolute;
-    background-size: cover;
     left: 50%;
     width: 25%;
     height: 100%;
     text-align: center;
+    background: url(../images/tacosman.png);
+    background-size: cover;
+    display: none;
 }
 
-.bemi {
+div.bemi {
     position: absolute;
-    background-size: cover;
     left: 75%;
     width: 25%;
     height: 100%;
     text-align: center;
+    background: url(../images/bemi.png);
+    background-size: cover;
+    display: none;
 }
 
 .portfolio {
@@ -211,7 +215,7 @@ span.tacos {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 50%;
+    left: 60%;
     font-size: 2em;
     color: white;
 }
@@ -220,7 +224,7 @@ span.bemi {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 75%;
+    left: 86%;
     font-size: 2em;
     color: white;
 }
@@ -228,9 +232,3 @@ span.bemi {
 .pointer:hover {
     cursor: pointer;
 }
-
-/* .forest:hover {
-    background: url(../images/svgs/forest-background.svg);
-    background-size: cover;
-    transition: 0.75s;
-} */
