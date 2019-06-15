@@ -211,7 +211,7 @@ span.tacos {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 35%;
+    left: 50%;
     font-size: 2em;
     color: white;
 }
@@ -220,9 +220,13 @@ span.bemi {
     position: absolute;
     text-align: center;
     top: 50%;
-    left: 35%;
+    left: 75%;
     font-size: 2em;
     color: white;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
 
 /* .forest:hover {
