@@ -89,11 +89,6 @@ $(document).ready(function() {
 
     // TODO: Implement compability function for Chrome and Safari
 
-    $('.view-more-button').on('click', displayClients);
-    $('.tag-remove').on('click', () => {
-        $('.our-clients').removeClass('slide-east-in');
-    });
-
     $('.our-clients').on('DOMMouseScroll', function(e) {
         e.stopPropagation();
     });

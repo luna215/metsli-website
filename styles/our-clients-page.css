@@ -14,6 +14,9 @@ html, body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+body {
+    transition: 1s;
+}
 
 header {
     background-color: rgba(33, 33, 33, 0.9);
