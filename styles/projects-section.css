@@ -180,14 +180,14 @@
 .view-more-button {
     cursor: pointer;
     position: absolute;
-    background-color: #F34E72;
+    border: 3px solid #F34E72;
     color: white;
     padding: 20px;
     font-size: 1.5em;
     border-radius: 35px;
     left: 10%;
     top: 70%;
-    transition: 0.5s;
+    transition: 0.25s;
     opacity: 0;
 }
 
@@ -202,7 +202,7 @@
     left: 10%;
     top: 70%;
     box-shadow: 10px 5px 5px black;
-    transition: 1s;
+    transition: 0.25s;
     opacity: 1;
 }
 

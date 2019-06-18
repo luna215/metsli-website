@@ -4,13 +4,37 @@
     <meta autho="metsli"/>
     <head>
         <title>METSLI</title>
+        <link rel="stylesheet" type="text/css" href="styles/header.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/projects-section.css">
         <link rel="stylesheet" type="text/css" href="styles/aboutus-section.css">
         <link rel="stylesheet" type="text/css" href="styles/transitions.css">
     </head>
     <body>
-        <nav class="navbar">
+        <header>
+            <div class="hamburger-menu">
+                <!-- <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span> -->
+                <ul class="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="our-clients.html"><li>Work</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+
+        </header>
+        <!-- <nav class="header-nav">
+            <ul class="header__item-list">
+                <li></li>
+                <li class="header__item"><a href="index.html">HOME</a></li>
+                <li class="header__item"><a href="our-clients.html">WORK</a></li>
+                <li class="header__item">ABOUT US</li>
+                <li class="header__item">CONTACT</li>
+            </ul>
+        </nav> -->
+        <aside class="navbar">
             <h1 class="name">Metsli</h1>
             <ul>
                 <li id="contact">Contact</li>
@@ -18,82 +42,84 @@
                 <li id="projects"></li>
                 <li id="about-us"></li>
             </ul>
-        </nav>
-        <div class="modal">
-            <form>
-                <input name="name" type="input" placeholder="Full Name" required>
-                <input name="email" type="email" placeholder="Email" required>
-                <br>
-                <textarea name="message" col="33" row="3">
-                    Hi! I would love to connect with you and see if you can modernize (or start) a webstite for me :)
-                </textarea>
-                <br>
-                <input type="submit" value="Send Message">
-            </form>
-        </div>
-        <div class="pages">
-            <div class="homepage-section">
-                <h1 class="title">METSLI</h1>
-                <div class="sub-content">
-                    <h1>Web Design /</h1>
-                    <h1>Software Development</h1>
+        </aside>
+        <main>
+            <div class="modal">
+                <form>
+                    <input name="name" type="input" placeholder="Full Name" required>
+                    <input name="email" type="email" placeholder="Email" required>
+                    <br>
+                    <textarea name="message" col="33" row="3">
+                        Hi! I would love to connect with you and see if you can modernize (or start) a webstite for me :)
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="pages">
+                <div class="homepage-section">
+                    <h1 class="title">METSLI</h1>
+                    <div class="sub-content">
+                        <h1>Web Design /</h1>
+                        <h1>Software Development</h1>
+                    </div>
+                    <div class="start-project-button">
+                        <a>Get a quote</a>
+                    </div>
+                    <div class="scroll-link">
+                        <svg class="mouse" xmlns="..." viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
+                            <g fill="none" fill-rule="evenodd">
+                                <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+                                <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
-                <div class="start-project-button">
-                    <a>Get a quote</a>
+                <div class="projects-section">
+                    <h1 class="portfolio title">Our Clients</h1>
+                    <div class="preview-forest"></div>
+                    <a title="click to view" href="https://luna215.github.io/personal-page/" target="_blank">
+                        <div class="overlay-forest"></div>
+                    </a>
+                    <a title="click to view" href="http://tacosmanzano.com/" target="_blank">
+                        <div class="preview-tacos"></div>
+                    </a>
+                    <a title="click to view" href="http://bemicleaningservices.com" target="_blank">
+                        <div class="preview-bemi"></div>
+                    </a>
+                    <div class="view-more-button">
+                            <span class="text"><a href="./our-clients.html">View More</a></span>
+                    </div>
                 </div>
-                <div class="scroll-link">
-                    <svg class="mouse" xmlns="..." viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
-                        <g fill="none" fill-rule="evenodd">
-                            <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
-                            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
-                        </g>
-                    </svg>
+                <div class="aboutus-section">
+                    <h1 class="about-us">About Us</h1>
+                    <div class="web-design-box">
+                        <h1>WEB DESIGN</h1>
+                        <pre>Whether you're a start-up on the verge of something
+    great, a non-profit or a large company looking for a
+    fresh-modern-look, our full-service capabilities will
+    allow you to re-imagine the way your business goes
+    digital and help your business grow.</pre>
+                    </div>
+                    <div class="software-development-box">
+                        <h1>Software Development</h1>
+                        <pre>Wether it's appliatcations to help with inventory to
+    applications to help improve communication within your
+    company. We strive to enrich your business capabilities
+    with custom web applications designed to meet business
+    challenges.
+                        </pre>
+                    </div>
+                    <div class="high-quality-team-box">
+                        <h1>HIGH QUALITY TEAM</h1>
+                        <pre>Our dedicated team of engineers are proficient in Python, Node.js, 
+    Ruby on Rails and all major mobile OS. Together with extraordinary 
+    customer service  representatives, we promise to deliver the best
+    web design and application services in Los Angeles.</pre>
+                    </div>
                 </div>
             </div>
-            <div class="projects-section">
-                <h1 class="portfolio title">Our Clients</h1>
-                <div class="preview-forest"></div>
-                <a title="click to view" href="https://luna215.github.io/personal-page/" target="_blank">
-                    <div class="overlay-forest"></div>
-                </a>
-                <a title="click to view" href="http://tacosmanzano.com/" target="_blank">
-                    <div class="preview-tacos"></div>
-                </a>
-                <a title="click to view" href="http://bemicleaningservices.com" target="_blank">
-                    <div class="preview-bemi"></div>
-                </a>
-                <div class="view-more-button">
-                        <span class="text"><a href="./our-clients.html">View More</a></span>
-                </div>
-            </div>
-            <div class="aboutus-section">
-                <h1 class="about-us">About Us</h1>
-                <div class="web-design-box">
-                    <h1>WEB DESIGN</h1>
-                    <pre>Whether you're a start-up on the verge of something
-great, a non-profit or a large company looking for a
-fresh-modern-look, our full-service capabilities will
-allow you to re-imagine the way your business goes
-digital and help your business grow.</pre>
-                </div>
-                <div class="software-development-box">
-                    <h1>Software Development</h1>
-                    <pre>Wether it's appliatcations to help with inventory to
-applications to help improve communication within your
-company. We strive to enrich your business capabilities
-with custom web applications designed to meet business
-challenges.
-                    </pre>
-                </div>
-                <div class="high-quality-team-box">
-                    <h1>HIGH QUALITY TEAM</h1>
-                    <pre>Our dedicated team of engineers are proficient in Python, Node.js, 
-Ruby on Rails and all major mobile OS. Together with extraordinary 
-customer service  representatives, we promise to deliver the best
-web design and application services in Los Angeles.</pre>
-                </div>
-            </div>
-        </div>
+        </main>
 
         <!-- Scripts -->
         <script
