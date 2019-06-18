@@ -138,12 +138,12 @@ a {
     position: absolute;
     left: 20%;
     top: 70%;
-    transition: 0.5s;
+    transition: 0.25s;
     opacity: 1;
 }
 
 .start-project-button>a {
-    background-color: #F34E72;
+    border: 3px solid #F34E72;
     color: white;
     padding: 20px;
     font-size: 1.5em;
@@ -157,7 +157,7 @@ a {
     font-size: 1.5em;
     border-radius: 35px;
     box-shadow: 10px 5px 5px black;
-    transition: 1s;
+    transition: 0.25s;
 }
 
 .modal {
