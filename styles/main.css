@@ -101,10 +101,9 @@ a {
 
 .navbar>ul>li:hover {
     cursor: pointer;
-    width: 70%;
+    width: 60%;
     height: 100%;
     margin-top: 35px;
-    border-bottom: 1px solid #FFFFFF;
 }
 
 .active {
