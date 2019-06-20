@@ -115,6 +115,8 @@ function handleScroll(e) {
 }
 
 $(document).ready(function () {
+    console.log($(window).width());
+    console.log($(window).height());
     $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
         'leading': true,
         'trailing': false
