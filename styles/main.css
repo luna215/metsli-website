@@ -10,7 +10,7 @@ html, body {
 body {
     background-image: url('../images/svgs/metsli-bg.svg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: initial;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
 }
