@@ -85,33 +85,41 @@ function transitionToAboutUs() {
     }
 }
 
+function handleScrollUp() {
+    if (currentPage === 'projects') {
+        previousPage = 'projects';
+        transitionToHomePage();
+        currentPage = 'homepage';
+    } else if (currentPage === 'about-us') {
+        previousPage = 'about-us';
+        transitionToProjects();
+        currentPage = 'projects';
+    } else {
+        console.warn(`Currently on page: ${currentPage}`);
+    }
+}
+
+function handleScrollDown() {
+    if (currentPage === 'homepage') {
+        previousPage = 'homepage';
+        transitionToProjects();
+        currentPage = 'projects';
+    } else if (currentPage === 'projects') {
+        previousPage = 'projects';
+        transitionToAboutUs();
+        currentPage = 'about-us';
+    } else {
+        console.warn(`Currently on ${currentPage}`);
+    }
+}
+
 function handleScroll(e) {
     var delta = e.originalEvent.detail;
 
     if (delta < 0) {
-        if (currentPage === 'projects') {
-            previousPage = 'projects';
-            transitionToHomePage();
-            currentPage = 'homepage';
-        } else if (currentPage === 'about-us') {
-            previousPage = 'about-us';
-            transitionToProjects();
-            currentPage = 'projects';
-        } else {
-            console.warn(`Currently on page: ${currentPage}`);
-        }
+        handleScrollUp();
     } else if (delta > 0) {
-        if (currentPage === 'homepage') {
-            previousPage = 'homepage';
-            transitionToProjects();
-            currentPage = 'projects';
-        } else if (currentPage === 'projects') {
-            previousPage = 'projects';
-            transitionToAboutUs();
-            currentPage = 'about-us';
-        } else {
-            console.warn(`Currently on ${currentPage}`);
-        }
+        handleScrollDown();
     }
 }
 
@@ -129,32 +137,10 @@ $(document).ready(function () {
 
     window.addEventListener('touchend', function(e) {
         swipeEnd = e.changedTouches[0].pageY;
-
         if(swipeEnd > swipeStart) {
-            alert('swiped down');
-            if (currentPage === 'projects') {
-                previousPage = 'projects';
-                transitionToHomePage();
-                currentPage = 'homepage';
-            } else if (currentPage === 'about-us') {
-                previousPage = 'about-us';
-                transitionToProjects();
-                currentPage = 'projects';
-            } else {
-                console.warn(`Currently on page: ${currentPage}`);
-            }
+            handleScrollUp();
         } else {
-            if (currentPage === 'homepage') {
-                previousPage = 'homepage';
-                transitionToProjects();
-                currentPage = 'projects';
-            } else if (currentPage === 'projects') {
-                previousPage = 'projects';
-                transitionToAboutUs();
-                currentPage = 'about-us';
-            } else {
-                console.warn(`Currently on ${currentPage}`);
-            }
+            handleScrollDown();
         }
     });
 
