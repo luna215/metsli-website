@@ -119,7 +119,7 @@
         left: 20%;
         top: 175%;
         height: 2em;
-        width: 300px;
+        width: 350px;
         transition: 0.25s;
         opacity: 0;
         background-color: #FF4500;
@@ -133,7 +133,7 @@
     }
     .web-design-box p {
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.75em;
     }
     .web-design-box:hover {
         cursor: pointer;
@@ -144,10 +144,10 @@
     .software-development-box {
         position: absolute;
         left: 15%;
-        top: 240%;
+        top: 200%;
         overflow: hidden;
-        height: 1em;
-        width: 300px;
+        height: 2em;
+        width: 350px;
         padding: 10px;
         background-color: #FF4500;
         transition: 0.30s;
@@ -155,7 +155,7 @@
         box-shadow: 0px 0px 20px black;
     }
     .software-development-box h1 {
-        font-size: 1em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
@@ -174,10 +174,10 @@
     .high-quality-team-box {
         position: absolute;
         left: 20%;
-        top: 270%;
+        top: 225%;
         overflow: hidden;
-        height: 1em;
-        width: 300px;
+        height: 2em;
+        width: 350px;
         padding: 10px;
         background-color: #FF4500;
         transition: 0.35s;
@@ -185,7 +185,7 @@
         box-shadow: 0px 0px 20px black;
     }
     .high-quality-team-box h1 {
-        font-size: 1em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
@@ -196,7 +196,7 @@
     .high-quality-team-box:hover {
         cursor: pointer;
         position: absolute;
-        height: 6em;
+        height: 6.5em;
         padding: 10px;
         transition: 0.25s;
         opacity: 1;
