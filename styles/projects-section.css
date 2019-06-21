@@ -1,235 +1,225 @@
-.projects-section{
-    transition: 2s;
-    opacity: 1;
+@media (min-width: 1400px) {
+    .portfolio {
+        position: absolute;
+        left: -45%;
+        top: 5%;
+        font-size: 10em;
+        color: white;
+        z-index: 12;
+        opacity: 0;
+        transition: 0.5s;
+    }
 }
 
-.portfolio {
-    left: -40%;
-    top: 10%;
-    font-size: 10em;
-    color: white;
-    z-index: 12;
-    opacity: 0;
-    transition: 0.5s;
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+    .portfolio {
+        position: absolute;
+        left: -50%;
+        top: 5%;
+        font-size: 10em;
+        color: white;
+        z-index: 12;
+        opacity: 0;
+        transition: 0.5s;
+    }
 }
 
-.preview-forest {
-    position: absolute;
-    background: url(../images/svgs/forest-background.svg);
-    background-size: cover;
-    height: 300px;
-    width: 500px;
-    top: 15%;
-    left: 100%;
-    transition: 0.5s;
-    opacity: 0;
+@media (min-width: 1200px) {
+    .portfolio {
+        position: absolute;
+        left: -35%;
+        top: 5%;
+        font-size: 7em;
+        color: white;
+        z-index: 12;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .view-more-button {
+        cursor: pointer;
+        position: absolute;
+        border: 3px solid #F34E72;
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        left: 10%;
+        top: 75%;
+        transition: 0.25s;
+        opacity: 0;
+    }
+
+    .preview-forest {
+        position: absolute;
+        background: url(../images/svgs/forest-background.svg);
+        background-size: cover;
+        height: 300px;
+        width: 500px;
+        top: 15%;
+        left: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    .preview-tacos {
+        position: absolute;
+        background: url(../images/tacosman.png);
+        background-size: cover;
+        height: 300px;
+        width: 500px;
+        top: 30%;
+        left: 90%;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    .preview-tacos:hover {
+        position: absolute;
+        background: url(../images/tacosman.png);
+        background-size: cover;
+        height: 300px;
+        width: 500px;
+        top: 30%;
+        left: 90%;
+        transition: 0.5s;
+        opacity: 0.8;
+        z-index: 2;
+        box-shadow: 10px 5px 5px black;
+    }
+    
+    .preview-bemi {
+        position: absolute;
+        background: url(../images/bemi.png);
+        background-size: cover;
+        height: 300px;
+        width: 500px;
+        top: 45%;
+        left: 110%;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 0;
+    }
+    
+    .preview-bemi:hover {
+        position: absolute;
+        background: url(../images/bemi.png);
+        background-size: cover;
+        height: 300px;
+        width: 500px;
+        top: 45%;
+        left: 110%;
+        opacity: 0.8;
+        z-index: 3;
+        box-shadow: 10px 10px 20px black;
+        font-weight: bolder;
+    }
+    
+    .overlay-forest {
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        height: 300px;
+        width: 500px;
+        top: 15%;
+        left: 100%;
+        transition: 0.5s;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .view-more-button {
+        cursor: pointer;
+        position: absolute;
+        border: 3px solid #F34E72;
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        left: 10%;
+        top: 70%;
+        transition: 0.25s;
+        opacity: 0;
+    }
+    
+    .view-more-button:hover {
+        cursor: pointer;
+        position: absolute;
+        background-color: #F34E72;
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        left: 10%;
+        top: 70%;
+        box-shadow: 10px 5px 5px black;
+        transition: 0.25s;
+        opacity: 1;
+    }
 }
 
-.preview-tacos {
-    position: absolute;
-    background: url(../images/tacosman.png);
-    background-size: cover;
-    height: 300px;
-    width: 500px;
-    top: 30%;
-    left: 90%;
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 2;
-}
+@media (min-width: 1px) and (max-width: 1199px) {
+    .portfolio {
+        position: absolute;
+        left: -45%;
+        top: 5%;
+        font-size: 8em;
+        color: white;
+        z-index: 12;
+        opacity: 0;
+        transition: 0.5s;
+    }
 
-.preview-tacos:hover {
-    position: absolute;
-    background: url(../images/tacosman.png);
-    background-size: cover;
-    height: 300px;
-    width: 500px;
-    top: 30%;
-    left: 90%;
-    transition: 0.5s;
-    opacity: 0.8;
-    z-index: 2;
-    box-shadow: 10px 5px 5px black;
-}
+    .preview-forest {
+        position: absolute;
+        background: url(../images/svgs/forest-background.svg);
+        background-size: cover;
+        height: 250px;
+        width: 400px;
+        top: 15%;
+        left: 100%;
+        transition: 0.5s;
+        opacity: 0;
+    }
 
-.preview-bemi {
-    position: absolute;
-    background: url(../images/bemi.png);
-    background-size: cover;
-    height: 300px;
-    width: 500px;
-    top: 45%;
-    left: 110%;
-    transition: 0.5s;
-    opacity: 0;
-    z-index: 0;
-}
+    .preview-tacos {
+        position: absolute;
+        background: url(../images/tacosman.png);
+        background-size: cover;
+        height: 250px;
+        width: 400px;
+        top: 30%;
+        left: 90%;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    .preview-bemi {
+        position: absolute;
+        background: url(../images/bemi.png);
+        background-size: cover;
+        height: 250px;
+        width: 400px;
+        top: 45%;
+        left: 110%;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 0;
+    }
 
-.preview-bemi:hover {
-    position: absolute;
-    background: url(../images/bemi.png);
-    background-size: cover;
-    height: 300px;
-    width: 500px;
-    top: 45%;
-    left: 110%;
-    opacity: 0.8;
-    z-index: 3;
-    box-shadow: 10px 10px 20px black;
-    font-weight: bolder;
-}
-
-.small-preview-forest {
-    position: absolute;
-    text-align: center;
-    top: 15%;
-    left: 10%;
-    height: 200px;
-    width: 200px;
-    background: url(../images/svgs/forest-background.svg);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-    transition: 0.5s;
-}
-.small-preview-forest:hover {
-    position: absolute;
-    cursor: pointer;
-    text-align: center;
-    top: 15%;
-    left: 10%;
-    height: 200px;
-    width: 250px;
-    background: url(../images/svgs/forest-background.svg);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-}
-
-.small-preview-tacos {
-    position: absolute;
-    text-align: center;
-    top: 15%;
-    left: 60%;
-    height: 200px;
-    width: 200px;
-    background: url(../images/tacosman.png);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-    transition: 0.5s;
-}
-
-.small-preview-tacos:hover {
-    position: absolute;
-    text-align: center;
-    top: 15%;
-    left: 60%;
-    height: 200px;
-    width: 250px;
-    background: url(../images/tacosman.png);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-}
-
-.small-preview-bemi {
-    position: relative;
-    text-align: center;
-    top: 70%;
-    left: 10%;
-    height: 200px;
-    width: 200px;
-    background: url(../images/bemi.png);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-    transition: 0.5s;
-}
-
-.small-preview-bemi:hover {
-    position: relative;
-    text-align: center;
-    height: 200px;
-    width: 250px;
-    background: url(../images/bemi.png);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-}
-
-.small-preview-premier {
-    position: relative;
-    text-align: center;
-    top: 70%;
-    left: 60%;
-    height: 200px;
-    width: 200px;
-    background: url(../images/premierpool.png);
-    background-size: cover;
-    box-shadow: 10px 5px 5px black;
-    transition: 0.5s;
-}
-
-.overlay-forest {
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 500px;
-    top: 15%;
-    left: 100%;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.view-more-button {
-    cursor: pointer;
-    position: absolute;
-    border: 3px solid #F34E72;
-    color: white;
-    padding: 20px;
-    font-size: 1.5em;
-    border-radius: 35px;
-    left: 10%;
-    top: 70%;
-    transition: 0.25s;
-    opacity: 0;
-}
-
-.view-more-button:hover {
-    cursor: pointer;
-    position: absolute;
-    background-color: #F34E72;
-    color: white;
-    padding: 20px;
-    font-size: 1.5em;
-    border-radius: 35px;
-    left: 10%;
-    top: 70%;
-    box-shadow: 10px 5px 5px black;
-    transition: 0.25s;
-    opacity: 1;
-}
-
-.banner {
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.text {
-    margin: auto 0;
-}
-.blue-bg {
-    font-size: 1.5em;
-    background: #051628; 
-}
-
-.tag-remove {
-    position: fixed;
-}
-.tag-remove:before {
-    position: fixed;
-    top: 2.5%;
-    left: 2.5%;
-    cursor: pointer;
-    content: 'x';
-    color: #fff;
-    font-weight: 300;
-    font-size: 3em;
-    font-family: Arial, sans-serif;
+    .view-more-button {
+        cursor: pointer;
+        position: absolute;
+        border: 3px solid #F34E72;
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        left: 10%;
+        top: 70%;
+        transition: 0.25s;
+        opacity: 0;
+    }
 }
