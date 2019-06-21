@@ -122,7 +122,7 @@ $(document).ready(function () {
 
     // TODO: Implement compability function for Chrome and Safari
     
-    window.addEventListener('DOMContentLoaded', function(e) {
+    window.addEventListener('touchstart', function(e) {
         alert(e.changedTouches[0].pageX);
     });
 
