@@ -8,8 +8,7 @@ html, body {
 }
 
 body {
-    background-image: url('../images/svgs/metsli-bg.svg');
-    background-attachment: scroll;
+    background: url('../images/svgs/metsli-bg.svg');
     background-size: cover;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
