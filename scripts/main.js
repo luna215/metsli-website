@@ -132,8 +132,29 @@ $(document).ready(function () {
 
         if(swipeEnd > swipeStart) {
             alert('swiped down');
+            if (currentPage === 'projects') {
+                previousPage = 'projects';
+                transitionToHomePage();
+                currentPage = 'homepage';
+            } else if (currentPage === 'about-us') {
+                previousPage = 'about-us';
+                transitionToProjects();
+                currentPage = 'projects';
+            } else {
+                console.warn(`Currently on page: ${currentPage}`);
+            }
         } else {
-            alert('swiped up');
+            if (currentPage === 'homepage') {
+                previousPage = 'homepage';
+                transitionToProjects();
+                currentPage = 'projects';
+            } else if (currentPage === 'projects') {
+                previousPage = 'projects';
+                transitionToAboutUs();
+                currentPage = 'about-us';
+            } else {
+                console.warn(`Currently on ${currentPage}`);
+            }
         }
     });
 
