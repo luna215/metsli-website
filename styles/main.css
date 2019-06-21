@@ -5,12 +5,12 @@ html, body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-image: url('../images/svgs/metsli-bg.svg');
-    background-size: cover;
-    background-attachment: initial;
 }
 
 body {
+    background-image: url('../images/svgs/metsli-bg.svg');
+    -moz-background-image: url('../images/svgs/metsli-bg.svg');
+    background-size: cover;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
 }
