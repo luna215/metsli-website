@@ -3,7 +3,7 @@
         position: absolute;
         padding: 5px;
         left: 60%;
-        top: 155%;
+        top: 170%;
         transition: 0.40s;
         background-color: #3c2949;
         font-size: 6em;
@@ -15,8 +15,9 @@
         position: absolute;
         overflow: hidden;
         left: 20%;
-        top: 135%;
-        height: 3em;
+        top: 160%;
+        height: 2em;
+        width: 425px;
         transition: 0.25s;
         opacity: 0;
         background-color: #FF4500;
@@ -24,13 +25,13 @@
         box-shadow: 0px 0px 20px black;
     }
     .web-design-box h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
     .web-design-box p {
         font-weight: bold;
-        font-size: 1.25em;
+        font-size: 1em;
     }
     .web-design-box:hover {
         cursor: pointer;
@@ -42,9 +43,10 @@
     .software-development-box {
         position: absolute;
         left: 12%;
-        top: 170%;
+        top: 185%;
         overflow: hidden;
-        height: 3em;
+        height: 2em;
+        width: 450px;
         padding: 10px;
         background-color: #FF4500;
         transition: 0.30s;
@@ -52,13 +54,13 @@
         box-shadow: 0px 0px 20px black;
     }
     .software-development-box h1 {
-        font-size: 3em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
-    .software-development-box>pre {
+    .software-development-box p {
         font-weight: bold;
-        font-size: 1.25em;
+        font-size: 1em;
     }
     .software-development-box:hover {
         position: absolute;
@@ -72,23 +74,24 @@
     .high-quality-team-box {
         position: absolute;
         left: 20%;
-        top: 200%;
+        top: 215%;
         overflow: hidden;
-        height: 3em;
+        height: 2em;
+        width: 450px;
         padding: 10px;
         background-color: #FF4500;
         transition: 0.35s;
         opacity: 1;
         box-shadow: 0px 0px 20px black;
     }
-    .high-quality-team-box>h1 {
-        font-size: 3em;
+    .high-quality-team-box h1 {
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
-    .high-quality-team-box>pre {
+    .high-quality-team-box p {
         font-weight: bold;
-        font-size: 1.25em;
+        font-size: 1em;
     }
     .high-quality-team-box:hover {
         cursor: pointer;
@@ -100,7 +103,7 @@
     }
 }
 
-@media (min-width: 800px) and (max-width: 1127px) {
+@media (min-width: 800px) and (max-width: 1129px) {
     .about-us {
         position: absolute;
         padding: 5px;
