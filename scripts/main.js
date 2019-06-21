@@ -115,14 +115,16 @@ function handleScroll(e) {
 }
 
 $(document).ready(function () {
-    console.log($(window).width());
-    console.log($(window).height());
     $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
         'leading': true,
         'trailing': false
     }));
 
     // TODO: Implement compability function for Chrome and Safari
+    
+    window.addEventListener('DOMContentLoaded', function(e) {
+        alert(e.changedTouches[0].pageX);
+    });
 
     $('.our-clients').on('DOMMouseScroll', function (e) {
         e.stopPropagation();
