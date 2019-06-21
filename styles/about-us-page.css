@@ -20,6 +20,20 @@ a {
     width: 100%;
 }
 
+.title {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    font-size: 5.2rem;
+    color: white;
+}
+.sub-content {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 1.8rem;
+    color: white;
+}
 .fade-out {
     position: absolute;
     background: linear-gradient(to top, #e3e8eb, rgba(0, 0, 0, 0));
@@ -45,20 +59,20 @@ a {
     bottom: 15%;
     right: 0;
     z-index: 2;
-    animation: rocketMove 5s linear alternate infinite;
+    animation: rocketMove 5s linear alternate 4;
 }
 
 .rocket-container svg {
     position: absolute;
     bottom: -20%;
     right: -10%;
-    animation: rocketShake .1s linear alternate infinite;
+    animation: rocketShake .1s linear alternate 4;
 }
 
 .smoke1 {
     transform: scale(0);
     opacity: 0;
-    animation: smoke 2s 1s infinite;
+    animation: smoke 2s 1s 4;
     transform-origin: center;
     transform-box: fill-box;
     animation-delay: .8s;
@@ -67,7 +81,7 @@ a {
 .smoke2 {
     transform: scale(0);
     opacity: 0;
-    animation: smoke 2s 1s infinite;
+    animation: smoke 2s 1s 4;
     transform-origin: center;
     transform-box: fill-box;
     animation-delay: .5s;
