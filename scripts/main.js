@@ -1,6 +1,7 @@
 var currentPage = 'homepage';
 var previousPage = 'homepage';
-
+var swipeStart = 0;
+var swipeEnd = 0;
 function removeHomePage() {
     $('#homepage').removeClass('active');
     $('.sub-content').addClass('slide-north ');
@@ -123,7 +124,17 @@ $(document).ready(function () {
     // TODO: Implement compability function for Chrome and Safari
     
     window.addEventListener('touchstart', function(e) {
-        alert(e.changedTouches[0].pageY);
+        swipeStart = e.changedTouches[0].pageY;
+    });
+
+    window.addEventListener('touchend', function(e) {
+        swipeEnd = e.changedTouches[0].pageY;
+
+        if(swipeEnd > swipeStart) {
+            alert('swiped down');
+        } else {
+            alert('swiped up');
+        }
     });
 
     $('.our-clients').on('DOMMouseScroll', function (e) {
