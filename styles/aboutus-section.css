@@ -1,4 +1,4 @@
-@media (min-width: 1130px) and (max-width: 1500px) {
+@media (min-width: 1130px) and (max-width: 1439px) {
     .about-us {
         position: absolute;
         padding: 5px;
@@ -102,6 +102,130 @@
         opacity: 1;
     }
 }
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .about-us {
+        position: absolute;
+        padding: 5px;
+        left: 60%;
+        top: 155%;
+        transition: 0.40s;
+        border-radius: 20px; 
+        background-color: #3c2949;
+        font-size: 6em;
+        opacity: 0;
+        box-shadow: 0px 0px 20px black;
+    }
+    .about-us:hover {
+        cursor: pointer;
+        background-color: #3c2949;
+        color: white;
+    }
+    .web-design-box {
+        position: absolute;
+        overflow: hidden;
+        left: 20%;
+        top: 140%;
+        height: 2em;
+        width: 425px;
+        transition: 0.25s;
+        opacity: 0;
+        background-color: #FF4500;
+        padding: 10px;
+        box-shadow: 0px 0px 20px black;
+    }
+    .web-design-box h1 {
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+    }
+    .web-design-box p {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .web-design-box:hover {
+        cursor: pointer;
+        position: absolute;
+        height: 10em;
+        padding: 10px;
+        transition: 0.25s;
+    }
+    .software-development-box {
+        position: absolute;
+        left: 15%;
+        top: 170%;
+        overflow: hidden;
+        height: 2em;
+        width: 450px;
+        padding: 10px;
+        background-color: #FF4500;
+        transition: 0.30s;
+        opacity: 0;
+        box-shadow: 0px 0px 20px black;
+    }
+    .software-development-box h1 {
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+    }
+    .software-development-box p {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .software-development-box:hover {
+        position: absolute;
+        overflow: hidden;
+        height: 10em;
+        padding: 10px;
+        background-color: #FF4500;
+        transition: 0.25s;
+        box-shadow: 0px 0px 20px black;
+    }
+    .high-quality-team-box {
+        position: absolute;
+        left: 20%;
+        top: 195%;
+        overflow: hidden;
+        height: 2em;
+        width: 450px;
+        padding: 10px;
+        background-color: #FF4500;
+        transition: 0.35s;
+        opacity: 1;
+        box-shadow: 0px 0px 20px black;
+    }
+    .high-quality-team-box h1 {
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+    }
+    .high-quality-team-box p {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .high-quality-team-box:hover {
+        cursor: pointer;
+        position: absolute;
+        height: 9em;
+        padding: 10px;
+        transition: 0.25s;
+        opacity: 1;
+    }
+
+    .know-more-button {
+        cursor: pointer;
+        position: absolute;
+        border: 3px solid #F34E72;
+        color: white;
+        padding: 20px;
+        font-size: 1.5em;
+        border-radius: 35px;
+        left: 10%;
+        top: 70%;
+        transition: 0.25s;
+        opacity: 0;
+    }
+} 
 
 @media (min-width: 800px) and (max-width: 1129px) {
     .about-us {
