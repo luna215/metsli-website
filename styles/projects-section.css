@@ -206,22 +206,6 @@
     opacity: 1;
 }
 
-.our-clients {
-    position: absolute;
-    top: 20%;
-    left: -30%;
-    height: 500px;
-    z-index: 100;
-    width: 700px;
-    outline: 0.4rem solid #FF4500;
-    background-color: #051628;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    box-shadow: 10px 5px 20px black;
-    transition: 0.5s;
-    opacity: 0;
-}
-
 .banner {
     text-align: center;
     padding-bottom: 40px;
