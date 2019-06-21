@@ -138,7 +138,7 @@
     .web-design-box:hover {
         cursor: pointer;
         position: absolute;
-        height: 7em;
+        height: 7.5em;
         transition: 0.25s;
     }
     .software-development-box {
@@ -166,7 +166,7 @@
     .software-development-box:hover {
         position: absolute;
         overflow: hidden;
-        height: 7em;
+        height: 7.5em;
         background-color: #FF4500;
         transition: 0.25s;
         box-shadow: 0px 0px 20px black;
@@ -196,7 +196,7 @@
     .high-quality-team-box:hover {
         cursor: pointer;
         position: absolute;
-        height: 6.5em;
+        height: 7em;
         padding: 10px;
         transition: 0.25s;
         opacity: 1;
