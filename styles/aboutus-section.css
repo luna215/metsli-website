@@ -100,15 +100,15 @@
     }
 }
 
-@media (min-width: 900px) and (max-width: 1127px) {
+@media (min-width: 1000px) and (max-width: 1127px) {
     .about-us {
         position: absolute;
         padding: 5px;
         left: 60%;
-        top: 225%;
+        top: 190%;
         transition: 0.40s;
         background-color: #3c2949;
-        font-size: 4em;
+        font-size: 5em;
         color: white;
         opacity: 0;
         box-shadow: 0px 0px 20px black;
@@ -117,8 +117,8 @@
         position: absolute;
         overflow: hidden;
         left: 20%;
-        top: 215%;
-        height: 1em;
+        top: 175%;
+        height: 2em;
         width: 300px;
         transition: 0.25s;
         opacity: 0;
@@ -127,13 +127,13 @@
         box-shadow: 0px 0px 20px black;
     }
     .web-design-box h1 {
-        font-size: 1em;
+        font-size: 2em;
         margin: 0;
         text-align: center;
     }
     .web-design-box p {
         font-weight: bold;
-        font-size: 0.75em;
+        font-size: 1em;
     }
     .web-design-box:hover {
         cursor: pointer;
