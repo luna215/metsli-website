@@ -123,7 +123,7 @@ $(document).ready(function () {
     // TODO: Implement compability function for Chrome and Safari
     
     window.addEventListener('touchstart', function(e) {
-        alert(e.changedTouches[0].pageX);
+        alert(e.changedTouches[0].pageY);
     });
 
     $('.our-clients').on('DOMMouseScroll', function (e) {
