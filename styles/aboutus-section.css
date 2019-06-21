@@ -100,7 +100,7 @@
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1127px) {
+@media (min-width: 800px) and (max-width: 1127px) {
     .about-us {
         position: absolute;
         padding: 5px;
