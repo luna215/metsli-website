@@ -45,20 +45,20 @@ a {
     bottom: 15%;
     right: 0;
     z-index: 2;
-    animation: rocketMove 5s linear alternate 2;
+    animation: rocketMove 5s linear alternate infinite;
 }
 
 .rocket-container svg {
     position: absolute;
     bottom: -20%;
     right: -10%;
-    animation: rocketShake .1s linear alternate 2;
+    animation: rocketShake .1s linear alternate infinite;
 }
 
 .smoke1 {
     transform: scale(0);
     opacity: 0;
-    animation: smoke 2s 1s 2;
+    animation: smoke 2s 1s infinite;
     transform-origin: center;
     transform-box: fill-box;
     animation-delay: .8s;
@@ -67,7 +67,7 @@ a {
 .smoke2 {
     transform: scale(0);
     opacity: 0;
-    animation: smoke 2s 1s 2;
+    animation: smoke 2s 1s infinite;
     transform-origin: center;
     transform-box: fill-box;
     animation-delay: .5s;
