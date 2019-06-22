@@ -23,7 +23,7 @@ a {
 
 @media (min-width: 800px) and (max-width: 1199px) {
     .title {
-        color: #F34E72;
+        color: #e24f54;
         position: absolute;
         font-size: 6em;
         left: 55%;
@@ -59,13 +59,13 @@ a {
         flex-direction: column;
     }
     .name {
-        color: #F34E72;
+        color: #e24f54;
     }
     #contact {
         position: absolute;
         left: 0%;
         top: 10%;
-        color: #F34E72;
+        color: #e24f54;
         background-color: white;
         height: 10px;
         width: 100%;
@@ -105,7 +105,7 @@ a {
         position: absolute;
         left: 0%;
         top: 10%;
-        color: #F34E72;
+        color: #e24f54;
         background-color: white;
         height: 10px;
         width: 100%;
@@ -148,14 +148,14 @@ a {
         opacity: 1;
     }
     .start-project-button>a {
-        border: 3px solid #F34E72;
+        border: 3px solid #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
         border-radius: 35px;
     }
     .start-project-button>a:hover {
-        background-color: #F34E72;
+        background-color: #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
@@ -182,7 +182,7 @@ a {
 
 @media (min-width: 1200px) and (max-width: 1550px) {
     .title {
-        color: #F34E72;
+        color: #e24f54;
         position: absolute;
         font-size: 6em;
         left: 55%;
@@ -195,7 +195,7 @@ a {
 
 @media (min-width:1551px) {
     .title {
-        color: #F34E72;
+        color: #e24f54;
         position: absolute;
         font-size: 9em;
         left: 55%;

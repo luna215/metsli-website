@@ -1,0 +1,123 @@
+html, body {
+    background: #e3e8eb;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jumbotron {
+    position: absolute;
+    background: url(../images/svgs/about-us-page-header.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-container {
+    width: 80%;
+    background: #ffffff;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.contact-form {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.picture {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #90d8cf;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    color: #e24f54;
+    text-align: center;
+}
+
+.picture h1 {
+    position: initial;
+    font-size: 12rem;
+}
+
+.form-control label, input, textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.form-control label {
+    margin-top: 20px;
+}
+
+.form-control input {
+    height: 5em;
+    background-color: #e3e8eb;
+    border: .2rem solid #e3e8eb
+}
+
+.form-control textarea {
+    height: 11.5rem;
+    background-color: #e3e8eb;
+    border: .2rem solid #e3e8eb;
+    resize: none;
+}
+
+.form-control button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    background-color: #e24f54;
+    border: 0;
+    border-radius: 2.4rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    /* height: 4.8rem; */
+    line-height: 3.8rem;
+    min-width: 10rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0 15px;
+    left: 10%;
+    margin-top: 20px;
+}

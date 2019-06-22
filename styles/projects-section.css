@@ -40,7 +40,7 @@
     .view-more-button {
         cursor: pointer;
         position: absolute;
-        border: 3px solid #F34E72;
+        border: 3px solid #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
@@ -125,7 +125,7 @@
     .view-more-button {
         cursor: pointer;
         position: absolute;
-        border: 3px solid #F34E72;
+        border: 3px solid #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
@@ -138,7 +138,7 @@
     .view-more-button:hover {
         cursor: pointer;
         position: absolute;
-        background-color: #F34E72;
+        background-color: #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
@@ -261,7 +261,7 @@
     .view-more-button {
         cursor: pointer;
         position: absolute;
-        border: 3px solid #F34E72;
+        border: 3px solid #e24f54;
         color: white;
         padding: 20px;
         font-size: 1.5em;
