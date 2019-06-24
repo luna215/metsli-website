@@ -57,7 +57,7 @@ a {
     height: 100%;
     right: 0;
     top: 0;
-    background-color: #90d8cf;
+    background-color: #82cdff;
     border-top-left-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -122,4 +122,18 @@ a {
     padding: 0 15px;
     left: 10%;
     margin-top: 20px;
+}
+
+.retro-text {
+    position: absolute;
+    background: url(../images/svgs/RetroText.svg);
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+
 }
