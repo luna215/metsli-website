@@ -1,0 +1,142 @@
+html, body {
+    background: #e3e8eb;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: GTWalsheim,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jumbotron {
+    position: absolute;
+    background: url(../images/svgs/about-us-page-header.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.enterprise-card {
+    width: 30%;
+    height: 110%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45%;
+    left: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.enterprise-card__top {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color:#f6a2b8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.enterprise-card .enterprise-card__heading {
+    position: absolute;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.enterprise-card p {
+    position: absolute;
+    color: black;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.premium-card {
+    width: 30%;
+    height: 110%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.premium-card__top {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color:#89dcc7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.premium-card .premium-card__heading {
+    position: absolute;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.starter-card {
+    width: 30%;
+    height: 110%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.starter-card__top {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color:#f2d06d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.starter-card .starter-card__heading {
+    position: absolute;
+    color: black;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    text-align: center;
+}
