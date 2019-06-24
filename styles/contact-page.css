@@ -126,7 +126,6 @@ a {
 
 .retro-text {
     position: absolute;
-    background: url(../images/svgs/RetroText.svg);
     background-size: cover;
     width: 80%;
     height: 80%;
