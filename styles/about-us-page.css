@@ -107,15 +107,21 @@ a {
 .how-we-work__heading {
     text-align: center;
     background-color: white;
+    padding: 15px;
+}
+
+.how-we-work__heading h1 {
     font-size: 3.5em;
+    margin: 0;
 }
 
 
 .how-we-work__constant-improvement {
     position: relative;
-    height: 150%;
-    width: 30%;
-    left: 5%;
+    height: 130%;
+    width: 22%;
+    top: 10%;
+    left: 10%;
     padding: 30px;
     background-color: white;
     transform: rotate(2.5deg)
@@ -124,7 +130,7 @@ a {
 .how-we-work__constant-improvement__picture {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 40%;
 }
 
 .how-we-work__caption {
@@ -140,8 +146,30 @@ a {
 }
 
 .how-we-work__constant-improvement__description {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-align: center;
+}
+
+.how-we-work__never-stop-learning {
+    position: relative;
+    height: 125%;
+    width: 22%;
+    top: -127%;
+    left: 40%;
+    padding: 30px;
+    background-color: white;
+    transform: rotate(-2.5deg)
+}
+
+.how-we-work__strong-teamwork {
+    position: relative;
+    height: 125%;
+    width: 22%;
+    top: -270%;
+    left: 70%;
+    padding: 30px;
+    background-color: white;
+    transform: rotate(-1.5deg)
 }
 
 @keyframes smoke {
