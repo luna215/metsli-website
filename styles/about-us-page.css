@@ -5,6 +5,7 @@ html, body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    font-family: GTWalsheim,Arial,sans-serif;
 }
 
 a {
@@ -93,36 +94,54 @@ a {
     color: #051628;
 }
 
-.ceo-card {
-    background-color: #ffacba;
-    margin: 0 auto;
-    margin-bottom: 10rem;
-    height: 500px;
-    width: 90%;
-    border-radius: 5px;
-}
-
-.ceo-card__picture {
-    position: relative;
-    top: -7%;
-    left: 10%;
-    background: url(../images/CEO.jpg);
-    background-size: cover;
-    height: 450px;
-    width: 400px;
-}
-
-.ceo-card__title {
-    color: white;
-}
-
-.cto-card {
+.how-we-work {
     background-color: #f8ce6a;
     margin: 0 auto;
     margin-bottom: 10rem;
     height: 500px;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
+    font-size: medium;
+}
+
+.how-we-work__heading {
+    text-align: center;
+    background-color: white;
+    font-size: 3.5em;
+}
+
+
+.how-we-work__constant-improvement {
+    position: relative;
+    height: 150%;
+    width: 30%;
+    left: 5%;
+    padding: 30px;
+    background-color: white;
+    transform: rotate(2.5deg)
+}
+
+.how-we-work__constant-improvement__picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.how-we-work__caption {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 2.5rem;
+}
+
+.how-we-work__constant-improvement__title {
+    font-size: 2.0rem;
+    line-height: 1.28;
+}
+
+.how-we-work__constant-improvement__description {
+    font-size: 1.25rem;
+    text-align: center;
 }
 
 @keyframes smoke {
