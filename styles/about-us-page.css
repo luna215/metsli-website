@@ -115,19 +115,28 @@ a {
     margin: 0;
 }
 
-
-.how-we-work__constant-improvement {
-    position: relative;
-    height: 130%;
-    width: 22%;
-    top: 10%;
-    left: 10%;
-    padding: 30px;
-    background-color: white;
-    transform: rotate(2.5deg)
+.how-we-work ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
-.how-we-work__constant-improvement__picture {
+.how-we-work ul li {
+    width: 25%;
+    margin: 50px;
+}
+
+
+.how-we-work__constant-improvement {
+    height: 75%;
+    width: 100%;
+    top: 10%; 
+    padding: 30px;
+    background-color: white;
+    /* transform: rotate(2.5deg) */
+}
+
+.how-we-work__picture {
     width: 100%;
     max-width: 100%;
     height: 40%;
@@ -151,25 +160,31 @@ a {
 }
 
 .how-we-work__never-stop-learning {
-    position: relative;
-    height: 125%;
-    width: 22%;
-    top: -127%;
-    left: 40%;
+    height: 75%;
+    width: 100%;
     padding: 30px;
     background-color: white;
-    transform: rotate(-2.5deg)
+    /* transform: rotate(-2.5deg) */
+}
+
+
+.how-we-work__title {
+    font-size: 2.0rem;
+    line-height: 1.28;
+    text-align: center;
+}
+
+.how-we-work__never-stop-learning__description {
+    font-size: 1.15rem;
+    text-align: center;
 }
 
 .how-we-work__strong-teamwork {
-    position: relative;
-    height: 125%;
-    width: 22%;
-    top: -270%;
-    left: 70%;
+    height: 75%;
+    width: 100%;
     padding: 30px;
     background-color: white;
-    transform: rotate(-1.5deg)
+    /* transform: rotate(-1.5deg) */
 }
 
 @keyframes smoke {
