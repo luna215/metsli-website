@@ -93,7 +93,11 @@ a {
 }
 
 .about-us__summary {
-    padding: 10em 0;
+    padding: 5em 0;
+    padding-top: 5em;
+    padding-bottom: 10em; 
+    padding-right: 0;
+    padding-left: 0;
     text-align: center;
     color: #051628;
 }

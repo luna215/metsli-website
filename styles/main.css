@@ -58,9 +58,18 @@ a {
         display: flex;
         flex-direction: column;
     }
-    .name {
+
+    .logo {
+        position: absolute;
+        top: -15%;
         color: #e24f54;
+        height: 40%;
+        width: 40%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
+
     #contact {
         position: absolute;
         left: 0%;
