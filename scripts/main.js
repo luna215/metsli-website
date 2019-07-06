@@ -2,6 +2,13 @@ var currentPage = 'homepage';
 var previousPage = 'homepage';
 var swipeStart = 0;
 var swipeEnd = 0;
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+const debounce = _.debounce(handleScroll, 100, {
+    'leading': true,
+    'trailing': false
+});
+
 function removeHomePage() {
     $('#homepage').removeClass('active');
     $('.sub-content').addClass('slide-north ');
@@ -114,7 +121,13 @@ function handleScrollDown() {
 }
 
 function handleScroll(e) {
-    var delta = e.originalEvent.detail;
+    let delta;
+    let firefox = false;
+    if(isFirefox) { 
+        delta = e.originalEvent.detail;
+    } else {
+        delta = e.originalEvent.wheelDelta;
+    }
 
     if (delta < 0) {
         handleScrollUp();
@@ -124,12 +137,10 @@ function handleScroll(e) {
 }
 
 $(document).ready(function () {
-    $('html').on('DOMMouseScroll', _.debounce(handleScroll, 100, {
-        'leading': true,
-        'trailing': false
-    }));
+    
+    $('html').on('DOMMouseScroll', debounce);
 
-    // TODO: Implement compability function for Chrome and Safari
+    $('html').on('mousewheel', debounce);
     
     window.addEventListener('touchstart', function(e) {
         swipeStart = e.changedTouches[0].pageY;
